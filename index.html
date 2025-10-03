@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleSwap DEX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>SimpleSwap</h1>
+            <button id="connect-button">Connect Wallet</button>
+        </div>
+        <div class="swap-box">
+            <div class="token-input">
+                <input type="number" id="from-amount" placeholder="0.0">
+                <div class="token-select" id="from-token">WETH</div>
+            </div>
+            <div class="separator">↓</div>
+            <div class="token-input">
+                <input type="number" id="to-amount" placeholder="0.0" disabled>
+                <div class="token-select" id="to-token">DAI</div>
+            </div>
+            <button id="swap-button">Swap</button>
+        </div>
+        <div id="status" class="status-box">
+            Please connect your wallet to begin.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
