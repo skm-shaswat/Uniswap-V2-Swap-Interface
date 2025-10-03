@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#connect-button {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#connect-button:hover {
+    background-color: #2ea043;
+}
+
+.swap-box {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #30363d;
+}
+
+.token-input {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="number"] {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 28px;
+    width: 70%;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+.token-select {
+    background-color: #21262d;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.separator {
+    text-align: center;
+    font-size: 24px;
+    color: #8b949e;
+    margin: 10px 0;
+}
+
+#swap-button {
+    background-color: #1f6feb;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+
+#swap-button:hover {
+    background-color: #388bfd;
+}
+
+#swap-button:disabled {
+    background-color: #30363d;
+    color: #8b949e;
+    cursor: not-allowed;
+}
+
+.status-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #161b22;
+    border-radius: 8px;
+    text-align: center;
+    color: #8b949e;
+    word-wrap: break-word;
+    border: 1px solid #30363d;
+}
